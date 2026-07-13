@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EOM Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body.lh-inner-body {
+            background-color: var(--black);
+            color: var(--white);
+        }
+
+        .youtube-link {
+            display: inline-block;
+            margin-bottom: 24px;
+            color: rgba(255, 255, 255, 0.6);
+            text-decoration: none;
+            font-size: 16px;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+        }
+
+        .youtube-link:hover {
+            color: var(--white);
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 24px;
+        }
+
+        .photo-card {
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25);
+        }
+
+        .photo-card img {
+            width: 100%;
+            height: 320px;
+            object-fit: cover;
+            object-position: center center;
+            display: block;
+            background-color: #000;
+            image-rendering: -webkit-optimize-contrast;
+            image-rendering: crisp-edges;
+            transform: translateZ(0);
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+
+        .photo-name {
+            padding: 12px 14px;
+            text-align: center;
+            font-size: 0.95rem;
+            color: rgba(255, 255, 255, 0.7);
+            letter-spacing: 0.04em;
+        }
+
+        @media (max-width: 900px) {
+            .lh-grid-layout {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .lh-grid-col-right {
+                padding-left: 0;
+            }
+
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body class="lh-inner-body">
+    <header class="lh-header inner-header">
+        <a href="project.html" id="lh-back-to-menu" class="lh-back-to-menu">BACK TO PROJECT</a>
+        <button id="lh-menu-trigger" class="lh-menu-btn" aria-label="Toggle Menu">
+            <span class="line-top"></span>
+            <span class="line-bottom"></span>
+        </button>
+    </header>
+
+    <div id="lh-menu-overlay" class="lh-menu-overlay">
+        <div class="lh-menu-container">
+            <nav class="lh-nav-large">
+                <div class="nav-item-wrap"><a href="aboutme.html" class="nav-link-large"><span>01 /</span> ABOUT</a></div>
+                <div class="nav-item-wrap"><a href="education.html" class="nav-link-large"><span>02 /</span> EDUCATION</a></div>
+                <div class="nav-item-wrap"><a href="blog.html" class="nav-link-large"><span>03 /</span> BLOG</a></div>
+                <div class="nav-item-wrap"><a href="project.html" class="nav-link-large active-page"><span>04 /</span> PROJECT</a></div>
+            </nav>
+        </div>
+    </div>
+
+    <main class="lh-content-wrap fade-in-page">
+
+            <div class="lh-grid-col-right">
+                <p class="lh-editorial-lead">Galeri untuk project Echoes Of Melody.</p>
+                <a class="youtube-link" href="https://youtu.be/FHddxPPlaA8?si=yJdZWtJBCIvR5yfo" target="_blank" rel="noopener noreferrer">Trailer Game</a>
+                <div class="gallery">
+                    <div class="photo-card">
+                        <img src="eomgallery/FotoVas.png" alt="Foto Vas">
+                        <div class="photo-name">Vas Bunga</div>
+                    </div>
+                    <div class="photo-card">
+                        <img src="eomgallery/Kamera1.png" alt="Foto Kamera Tanpa Gambar">
+                        <div class="photo-name">Kamera Tanpa Gambar</div>
+                    </div>
+                    <div class="photo-card">
+                        <img src="eomgallery/Kamera2.png" alt="Foto Kamera Dengan Gambar">
+                        <div class="photo-name">Kamera Dengan Gambar</div>
+                    </div>
+                    <div class="photo-card">
+                        <img src="eomgallery/Koran_Fullscreen.png" alt="Foto Koran">
+                        <div class="photo-name">Koran</div>
+                    </div>
+                    <div class="photo-card">
+                        <img src="eomgallery/LaciKamar.png" alt="Foto Laci Kamar">
+                        <div class="photo-name">Laci Kamar</div>
+                    </div>
+                    <div class="photo-card">
+                        <img src="eomgallery/LaciRuangTengah.png" alt="Foto Laci Ruang Tengah">
+                            <div class="photo-name">Laci Ruang Tengah</div>
+                    </div>
+                    <div class="photo-card">
+                        <img src="eomgallery/Loker.png" alt="Foto Loker">
+                        <div class="photo-name">Loker</div>
+                    </div>
+                    <div class="photo-card">
+                        <img src="eomgallery/MejaRuangTengah_0001.png" alt="Foto Meja Ruang Tengah">
+                        <div class="photo-name">Meja Ruang Tengah</div>
+                    </div>
+                    <div class="photo-card">
+                        <img src="eomgallery/PiguraIbuArka.png" alt="Foto Pigura Ibu Arka">
+                        <div class="photo-name">Pigura Ibu Arka</div>
+                    </div>
+                    <div class="photo-card">
+                        <img src="eomgallery/rs (dinding).png" alt="Foto Dinding Rumah Sakit">
+                        <div class="photo-name">Dinding Rumah Sakit</div>
+                    </div>
+                    <div class="photo-card">
+                        <img src="eomgallery/Surat Harapan ( Aveera).png" alt="Foto Surat Harapan">
+                        <div class="photo-name">Surat Harapan</div>
+                    </div>
+                    <div class="photo-card">
+                        <img src="eomgallery/Surat Hukuman ( Aveera ).png" alt="Foto Surat Hukuman">
+                        <div class="photo-name">Surat Hukuman</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

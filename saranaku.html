@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saranaku Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body.lh-inner-body {
+            background-color: var(--black);
+            color: var(--white);
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 24px;
+        }
+
+        .photo-card {
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25);
+        }
+
+        .photo-card img {
+            width: 100%;
+            height: 260px;
+            object-fit: contain;
+            object-position: center;
+            display: block;
+            background-color: #111;
+            padding: 8px;
+            box-sizing: border-box;
+            image-rendering: auto;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+
+        .photo-name {
+            padding: 12px 14px;
+            text-align: center;
+            font-size: 0.95rem;
+            color: rgba(255, 255, 255, 0.7);
+            letter-spacing: 0.04em;
+        }
+
+        @media (max-width: 900px) {
+            .lh-grid-layout {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .lh-grid-col-right {
+                padding-left: 0;
+            }
+
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body class="lh-inner-body">
+    <header class="lh-header inner-header">
+        <a href="project.html" id="lh-back-to-menu" class="lh-back-to-menu">BACK TO PROJECT</a>
+        <button id="lh-menu-trigger" class="lh-menu-btn" aria-label="Toggle Menu">
+            <span class="line-top"></span>
+            <span class="line-bottom"></span>
+        </button>
+    </header>
+
+    <div id="lh-menu-overlay" class="lh-menu-overlay">
+        <div class="lh-menu-container">
+            <nav class="lh-nav-large">
+                <div class="nav-item-wrap"><a href="aboutme.html" class="nav-link-large"><span>01 /</span> ABOUT</a></div>
+                <div class="nav-item-wrap"><a href="education.html" class="nav-link-large"><span>02 /</span> EDUCATION</a></div>
+                <div class="nav-item-wrap"><a href="blog.html" class="nav-link-large"><span>03 /</span> BLOG</a></div>
+                <div class="nav-item-wrap"><a href="project.html" class="nav-link-large active-page"><span>04 /</span> PROJECT</a></div>
+            </nav>
+        </div>
+    </div>
+
+    <main class="lh-content-wrap fade-in-page">
+
+            <div class="lh-grid-col-right">
+                <p class="lh-editorial-lead">Galeri untuk project Saranaku.</p>
+                <div class="gallery">
+                    <div class="photo-card">
+                        <img src="saranakugalerry/01_DashboardAwal.png" alt="Foto Dashboard Awal">
+                        <div class="photo-name">Dashboard Awal</div>
+                    </div>
+                    <div class="photo-card">
+                        <img src="saranakugalerry/02_Login.png" alt="Foto Login">
+                        <div class="photo-name">Login</div>
+                    </div>
+                    <div class="photo-card">
+                        <img src="saranakugalerry/03_Register.png" alt="Foto Register">
+                        <div class="photo-name">Register</div>
+                    </div>
+                    <div class="photo-card">
+                        <img src="saranakugalerry/04_ResetPassword.png" alt="Foto Reset Password">
+                        <div class="photo-name">Reset Password</div>
+                    </div>
+                    <div class="photo-card">
+                        <img src="saranakugalerry/05_DashboardAdmin.png" alt="Foto Dashboard">
+                        <div class="photo-name">Dashboard (Admin)</div>
+                    </div>
+                    <div class="photo-card">
+                        <img src="saranakugalerry/06_SemuaLaporanAdmin.png" alt="Foto Semua Laporan Admin">
+                        <div class="photo-name">Semua Laporan (Admin)</div>
+                    </div>
+                    <div class="photo-card">
+                        <img src="saranakugalerry/07_ReadLaporanAdmin.png" alt="Foto Detail Laporan Admin">
+                        <div class="photo-name">Detail Laporan (Admin)</div>
+                    </div>        
+                    <div class="photo-card">
+                        <img src="saranakugalerry/08_EditLaporanAdmin.png" alt="Foto Edit Laporan Admin">
+                        <div class="photo-name">Edit Laporan (Admin)</div>
+                    </div>
+                    <div class="photo-card">
+                        <img src="saranakugalerry/09_KelolaSaranaAdmin.png" alt="Foto Kelola Sarana Admin">
+                        <div class="photo-name">Kelola Sarana (Admin)</div>
+                    </div>
+                    <div class="photo-card">
+                        <img src="saranakugalerry/10_TambahSaranaAdmin.png" alt="Foto Tambah Sarana Admin">
+                        <div class="photo-name">Tambah Sarana (Admin)</div>
+                    </div>
+                    <div class="photo-card">
+                        <img src="saranakugalerry/11_DashboardUser.png" alt="Foto Dashboard User">
+                        <div class="photo-name">Dashboard (User)</div>
+                    </div>
+                    <div class="photo-card">
+                        <img src="saranakugalerry/12_FormLaporanUser.png" alt="Foto Form Laporan User">
+                        <div class="photo-name">Form Laporan (User)</div>
+                    </div>
+                    <div class="photo-card">
+                        <img src="saranakugalerry/13_FormLaporanUser2.png" alt="Foto Semua Laporan User 2">
+                        <div class="photo-name">Form Laporan (User)</div>
+                    </div>
+                    <div class="photo-card">
+                        <img src="saranakugalerry/14_RiwayatLaporanUser.png" alt="Foto Riwayat Laporan User">
+                        <div class="photo-name">Riwayat Laporan (User)</div>
+                    </div>
+                    <div class="photo-card">
+                        <img src="saranakugalerry/15_ReadLaporanUser.png" alt="Foto Detail Laporan User">
+                        <div class="photo-name">Detail Laporan (User)</div>
+                    </div>
+                    <div class="photo-card">
+                        <img src="saranakugalerry/16_EditLaporanUser.png" alt="Foto Edit Laporan User">
+                        <div class="photo-name">Edit Laporan (User)</div>
+                    </div>                        
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
