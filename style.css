@@ -46,6 +46,121 @@ body {
 ::-webkit-scrollbar-thumb { background: var(--gray-dark); }
 ::-webkit-scrollbar-thumb:hover { background: var(--white); }
 
+.lh-home-body {
+    overflow-y: auto;
+    background-color: #0d0d0d;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.lh-contact {
+    padding: 100px 24px;
+    background-color: #121212;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+
+.lh-contact-container {
+    width: 100%;
+    max-width: 520px;
+    text-align: left;
+}
+
+.lh-contact-container h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    color: #ffffff;
+    margin-bottom: 8px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.lh-contact-container p {
+    font-size: 1rem;
+    color: #a0a0a0;
+    margin-bottom: 40px;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.lh-email-form {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    text-align: center;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #888888;
+    text-align: left;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 14px 16px;
+    background-color: #1a1a1a;
+    border: 1px solid #2a2a2a;
+    border-radius: 6px;
+    color: #ffffff;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+.form-group textarea {
+    resize: none;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #ffffff;
+    background-color: #222222;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #555555;
+}
+
+.lh-btn-submit {
+    margin-top: 10px;
+    padding: 16px 20px;
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.lh-btn-submit:hover {
+    background-color: #e5e5e5;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
+}
+
+.lh-btn-submit:active {
+    transform: translateY(0);
+}
+
 .lh-header {
     position: fixed;
     top: 0;
